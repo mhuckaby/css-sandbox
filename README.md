@@ -1,7 +1,6 @@
-lesscss-sandbox
+css-sandbox
 ===============
-
-## In the browser
+Sandbox project to work with some CSS (less.js in browser, div sizing/scrolling)
 
 # 1. Install dependencies
 npm install
