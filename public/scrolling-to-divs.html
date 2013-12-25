@@ -40,11 +40,11 @@
     <body>
         <div class="navigation">
             <ul>
-                <li data-div-id="section1">section 1</li>
-                <li data-div-id="section2">section 2</li>
-                <li data-div-id="section3">section 3</li>
-                <li data-div-id="section4">section 4</li>
-                <li data-div-id="section5">section 5</li>
+                <li><a href="#" data-div-id="section1" onclick="return false;">section 1</a></li>
+                <li><a href="#" data-div-id="section2" onclick="return false;">section 2</a></li>
+                <li><a href="#" data-div-id="section3" onclick="return false;">section 3</a></li>
+                <li><a href="#" data-div-id="section4" onclick="return false;">section 4</a></li>
+                <li><a href="#" data-div-id="section5" onclick="return false;">section 5</a></li>
             </ul>
         </div>
         <div id="section1" class="full-screen-height yellow"></div>
@@ -83,7 +83,7 @@
 
         sizeMarkedElements();
 
-        $(".navigation li").click(function(event) {
+        $(".navigation a").click(function(event) {
             var id = "#" + event.target.dataset["divId"];
             var scrollToElement = $(id);
 
