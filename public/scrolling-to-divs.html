@@ -22,13 +22,14 @@
                 list-style: none;
                 padding-left:0px;
             }
-            .navigation {
+            nav {
                 background:#ffffff;
                 border:1px solid black;
                 left:0px;
                 position:fixed;
                 top:10px;
             }
+
             .marker{}
             .one-eighth-screen-height{}
             .seven-eighths-screen-height{}
@@ -41,7 +42,8 @@
     </head>
 
     <body>
-        <div class="navigation">
+
+        <nav>
             <ul>
                 <li><a href="#" data-div-id="section1" onclick="return false;">section 1</a></li>
                 <li><a href="#" data-div-id="section2" onclick="return false;">section 2</a></li>
@@ -50,7 +52,7 @@
                 <li><a href="#" data-div-id="section5" onclick="return false;">section 5</a></li>
                 <li><a href="#" data-div-id="section6" onclick="return false;">section 6</a></li>
             </ul>
-        </div>
+        </nav>
         <div id="section1" class="marker one-eighth-screen-height corn"></div>
         <div id="section2" class="marker seven-eighths-screen-height yellow"></div>
         <div id="section3" class="marker one-eighth-screen-height blue"></div>
@@ -105,7 +107,7 @@
 
         var tops = sizeMarkedElements();
 
-        $(".navigation a").click(function(event) {
+        $("nav a").click(function(event) {
             var id = "#" + event.target.dataset["divId"];
             var scrollToElement = $(id);
 
